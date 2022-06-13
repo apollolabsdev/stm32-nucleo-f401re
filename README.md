@@ -1,6 +1,6 @@
 # Rust Project Examples and Templates for STM32 Nucleo-F401RE
 
-This repository contains example projects that can also be used as templates written in the Rust programming language targeting the STM32 Nucleo-F401RE development board from ST.
+This repository contains example projects that can also be used as templates written in the Rust programming language targeting the STM32 Nucleo-F401RE development board from ST Microelectronics.
 
 Each of these these projects has an accompanying blog post explaining the code in more detail [here](https://apollolabsblog.hashnode.dev/). The various projects can be also used as a starting point for programming your Nucleo board.
 
