@@ -4,6 +4,6 @@ This repository contains example projects that can also be used as templates wri
 
 Each of these these projects has an accompanying blog post explaining the code in more detail [here](https://apollolabsblog.hashnode.dev/). The various projects can be also used as a starting point for programming your Nucleo board.
 
-These templates were generated in VSCode. If you need to setup the whole tool-chain, you can follow this tutorial.
+These templates were generated in VSCode. To set up a template project, you can follow [this](https://apollolabs.notion.site/STM32F4xx-VSCode-Project-Setup-3cdea2ce79f34a08a1a7e3f987e992a7) tutorial.
 
 The code in this repository should also be compatible with a various number of STM32 devices that are supported by the STM32F4xx HAL. You can refer to the STM32F4xx HAL repositopry for the full list of devices that are supported.
