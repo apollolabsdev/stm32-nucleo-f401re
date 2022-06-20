@@ -2,12 +2,14 @@
 #![no_main]
 
 // Imports
+use core::fmt::Write; // allows use to use the WriteLn! macro for easy printing
 use cortex_m_rt::entry;
+use debouncr::{debounce_3, Edge};
 use panic_halt as _;
 use stm32f4xx_hal::{
-    gpio::Pin,
     pac::{self},
     prelude::*,
+    serial::{Config, Serial},
 };
 
 #[entry]
@@ -26,41 +28,98 @@ fn main() -> ! {
     let gpioc = dp.GPIOC.split();
     let button = gpioc.pc13;
 
+    // Serial config steps:
+    // 1) Need to configure the system clocks
+    // - Promote RCC structure to HAL to be able to configure clocks
+    let rcc = dp.RCC.constrain();
+    // - Configure system clocks
+    // Note: When I used a frequency other than 8 MHz I faced UART baud issues
+    let clocks = rcc.cfgr.use_hse(8.MHz()).freeze();
+
+    // 2) Configure/Define TX pin
+    // Note that we already split port A earlier for the led pin
+    // Use PA2 as it is connected to the host serial interface
+    let tx_pin = gpioa.pa2.into_alternate();
+
+    // 3) Configure Serial perihperal channel
+    // We're going to use USART2 since its pins are the ones connected to the USART host interface
+    // To configure/instantiate serial peripheral channel we have two options:
+    // Use the device peripheral handle to directly access USART2 and instantiate a transmitter instance
+    let mut tx = dp
+        .USART2
+        .tx(
+            tx_pin,
+            Config::default()
+                .baudrate(115200.bps())
+                .wordlength_8()
+                .parity_none(),
+            &clocks,
+        )
+        .unwrap();
+    // or
+    // Use the Serial abstraction to instantiate a transmitter instance
+    // let mut tx = Serial::tx(
+    //     dp.USART2,
+    //     tx_pin,
+    //     Config::default()
+    //         .baudrate(115200.bps())
+    //         .wordlength_8()
+    //         .parity_none(),
+    //     &clocks,
+    // )
+    // .unwrap();
+
     // Create and initialize a delay variable to manage delay loop
     let mut del_var = 7_0000_i32;
 
     // Initialize LED to on or off
     led.set_low();
 
+    // Initialize debouncer to false because button is active low
+    // Chose 3 consecutive states based on testing
+    let mut debouncer = debounce_3(false);
+
+    // Variable to keep track of how many button presses occured
+    let mut value: u8 = 0;
+
     // Application Loop
     loop {
-        // Call delay function and update delay variable once done
-        del_var = loop_delay(del_var, &button);
+        // Enter Delay Loop
+        for _i in 1..del_var {
+            // Keep checking if button got pressed
+            if debouncer.update(button.is_low()) == Some(Edge::Falling) {
+                // If button is pressed print to derial and decrease the delay value
+                writeln!(tx, "Button Press {:02}\r", value).unwrap();
+                // Increment value keeping track of button presses
+                value = value.wrapping_add(1);
+                // Decrement the amount of delay
+                del_var = del_var - 3_0000_i32;
+                // If updated delay value drops below threshold then reset it back to starting value
+                if del_var < 1_0000 {
+                    del_var = 7_0000_i32;
+                }
+                // Exit delay loop since button was pressed
+                break;
+            }
+        }
+
+        // Delay loop without button debouncing
+        // for _i in 1..del_var {
+        //     // Keep checking if button got pressed
+        //     if button.is_low() {
+        //         // If button is pressed print to derial and decrease the delay value
+        //         writeln!(tx, "Button Pressed\r").unwrap();
+        //         del_var = del_var - 3_0000_i32;
+        //         // If updated delay value drops below threshold then reset it back to starting value
+        //         if del_var < 1_0000 {
+        //             del_var = 7_0000_i32;
+        //         }
+        //         // Exit loop
+        //         break;
+        //     }
+        // }
 
         // Toggle LED
         led.toggle();
-
-        // Call delay function and update delay variable once done
-        //del_var = loop_delay(del_var, &button);
     }
-}
-
-// Delay Function
-fn loop_delay<const P: char, const N: u8>(mut del: i32, but: &Pin<P, N>) -> i32 {
-    // Loop for until value of del
-    for _i in 1..del {
-        // Check if button got pressed
-        if but.is_low() {
-            // If button pressed decrease the delay value
-            del = del - 3_0000_i32;
-            // If updated delay value reaches zero then reset it back to starting value
-            if del < 1_0000 {
-                del = 7_0000_i32;
-            }
-            // Exit function returning updated delay value if button pressed
-            return del;
-        }
-    }
-    // Exit function returning original delay value if button no pressed (for loop ending naturally)
-    del
 }
