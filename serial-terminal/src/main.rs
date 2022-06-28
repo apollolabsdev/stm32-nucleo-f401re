@@ -33,7 +33,7 @@ fn main() -> ! {
     // - Promote RCC structure to HAL to be able to configure clocks
     let rcc = dp.RCC.constrain();
     // - Configure system clocks
-    // Note: When I used a frequency other than 8 MHz I faced UART baud issues
+    // 8 MHz must be used for the Nucleo-F401RE board according to manual
     let clocks = rcc.cfgr.use_hse(8.MHz()).freeze();
 
     // 2) Configure/Define TX pin
