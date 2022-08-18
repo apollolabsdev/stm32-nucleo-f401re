@@ -2,65 +2,104 @@
 #![no_main]
 
 // Imports
+use core::cell::{Cell, RefCell};
+use cortex_m::interrupt::Mutex;
 use cortex_m_rt::entry;
 use panic_halt as _;
 use stm32f4xx_hal::{
-    gpio::Pin,
-    pac::{self},
+    gpio::{self, Edge, Input},
+    pac::{self, interrupt},
     prelude::*,
 };
+
+// Create an alias for pin PC13
+type ButtonPin = gpio::PC13<Input>;
+
+// Global Variable Definitions
+// Global variables are wrapped in safe abstractions.
+// Peripherals are wrapped in a different manner than regular global mutable data.
+// In the case of peripherals we must be sure only one refrence exists at a time.
+// Refer to Chapter 6 of the Embedded Rust Book for more detail.
+
+// Create a Global Variable for the GPIO Peripheral that I'm going to pass around.
+static G_BUTTON: Mutex<RefCell<Option<ButtonPin>>> = Mutex::new(RefCell::new(None));
+// Create a Global Variable for the delay value that I'm going to pass around for delay.
+static G_DELAYMS: Mutex<Cell<u32>> = Mutex::new(Cell::new(2000_u32));
 
 #[entry]
 fn main() -> ! {
     // Setup handler for device peripherals
-    let dp = pac::Peripherals::take().unwrap();
+    let mut dp = pac::Peripherals::take().unwrap();
 
-    // Configure the LED pin as a push pull ouput and obtain handler.
-    // On the Nucleo FR401 theres an on-board LED connected to pin PA5.
+    // Configure and obtain handle for delay abstraction
+    // 1) Promote RCC structure to HAL to be able to configure clocks
+    let rcc = dp.RCC.constrain();
+    // 2) Configure the system clocks
+    // 8 MHz must be used for HSE on the Nucleo-F401RE board according to manual
+    let clocks = rcc.cfgr.use_hse(8.MHz()).freeze();
+    // 3) Create delay handle
+    let mut delay = dp.TIM1.delay_ms(&clocks);
+
+    // Configure the LED pin as a push pull ouput and obtain handle
+    // On the Nucleo FR401 theres an on-board LED connected to pin PA5
+    // 1) Promote the GPIOA PAC struct
     let gpioa = dp.GPIOA.split();
+    // 2) Configure Pin and Obtain Handle
     let mut led = gpioa.pa5.into_push_pull_output();
 
-    // Configure the button pin (if needed) and obtain handler.
-    // On the Nucleo FR401 there is a button connected to pin PC13.
-    // Pin is input by default
+    // Configure the button pin as input and obtain handle
+    // On the Nucleo FR401 there is a button connected to pin PC13
+    // 1) Promote the GPIOC PAC struct
     let gpioc = dp.GPIOC.split();
-    let button = gpioc.pc13;
+    // 2) Configure Pin and Obtain Handle
+    let mut button = gpioc.pc13;
 
-    // Create and initialize a delay variable to manage delay loop
-    let mut del_var = 7_0000_i32;
+    // Configure Button Pin for Interrupts
+    // 1) Promote SYSCFG structure to HAL to be able to configure interrupts
+    let mut syscfg = dp.SYSCFG.constrain();
+    // 2) Make button an interrupt source
+    button.make_interrupt_source(&mut syscfg);
+    // 3) Make button an interrupt source
+    button.trigger_on_edge(&mut dp.EXTI, Edge::Rising);
+    // 4) Enable gpio interrupt for button
+    button.enable_interrupt(&mut dp.EXTI);
 
-    // Initialize LED to on or off
-    led.set_low();
+    // Enable the external interrupt in the NVIC by passing the button interrupt number
+    unsafe {
+        cortex_m::peripheral::NVIC::unmask(button.interrupt());
+    }
+
+    // Now that button is configured, move button into global context
+    cortex_m::interrupt::free(|cs| {
+        G_BUTTON.borrow(cs).replace(Some(button));
+    });
 
     // Application Loop
     loop {
-        // Call delay function and update delay variable once done
-        del_var = loop_delay(del_var, &button);
-
-        // Toggle LED
-        led.toggle();
-
-        // Call delay function and update delay variable once done
-        //del_var = loop_delay(del_var, &button);
+        // Turn On LED
+        led.set_high();
+        // Obtain G_DELAYMS and delay
+        delay.delay_ms(cortex_m::interrupt::free(|cs| G_DELAYMS.borrow(cs).get()));
+        // Turn off LED
+        led.set_low();
+        // Obtain G_DELAYMS and delay
+        delay.delay_ms(cortex_m::interrupt::free(|cs| G_DELAYMS.borrow(cs).get()));
     }
 }
 
-// Delay Function
-fn loop_delay<const P: char, const N: u8>(mut del: i32, but: &Pin<P, N>) -> i32 {
-    // Loop for until value of del
-    for _i in 1..del {
-        // Check if button got pressed
-        if but.is_low() {
-            // If button pressed decrease the delay value
-            del = del - 3_0000_i32;
-            // If updated delay value reaches zero then reset it back to starting value
-            if del < 1_0000 {
-                del = 7_0000_i32;
-            }
-            // Exit function returning updated delay value if button pressed
-            return del;
+#[interrupt]
+fn EXTI15_10() {
+    // Start a Critical Section
+    cortex_m::interrupt::free(|cs| {
+        // Obtain Access to Delay Global Data and Adjust Delay
+        G_DELAYMS
+            .borrow(cs)
+            .set(G_DELAYMS.borrow(cs).get() - 500_u32);
+        if G_DELAYMS.borrow(cs).get() < 500_u32 {
+            G_DELAYMS.borrow(cs).set(2000_u32);
         }
-    }
-    // Exit function returning original delay value if button no pressed (for loop ending naturally)
-    del
+        // Obtain access to Global Button Peripheral and Clear Interrupt Pending Flag
+        let mut button = G_BUTTON.borrow(cs).borrow_mut();
+        button.as_mut().unwrap().clear_interrupt_pending_bit();
+    });
 }
