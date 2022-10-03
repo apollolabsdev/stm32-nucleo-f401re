@@ -7,7 +7,7 @@ use panic_halt as _;
 use stm32f4xx_hal::{
     pac::{self},
     prelude::*,
-    spi::{Mode, NoMiso, Phase, Polarity},
+    spi::{Mode, NoMiso, Phase, Polarity, Spi},
 };
 
 #[entry]
@@ -41,6 +41,18 @@ fn main() -> ! {
         2.MHz(),
         &clocks,
     );
+
+    // OR you can do something like this
+    // let mut spi = Spi::new(
+    //     dp.SPI1,
+    //     (sclk, NoMiso {}, mosi),
+    //     Mode {
+    //         polarity: Polarity::IdleLow,
+    //         phase: Phase::CaptureOnFirstTransition,
+    //     },
+    //     2.MHz(),
+    //     &clocks,
+    // );
 
     // Application Loop
 
