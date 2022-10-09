@@ -1,0 +1,1 @@
+/Users/omarhiari/Dropbox/My\ Mac\ (omars-mbp.lan)/Documents/GitHub/stm32-nucleo-f4-rust/Drivers/max7219/target/debug/libmax7219.rlib: /Users/omarhiari/Dropbox/My\ Mac\ (omars-mbp.lan)/Documents/GitHub/stm32-nucleo-f4-rust/Drivers/max7219/src/lib.rs
