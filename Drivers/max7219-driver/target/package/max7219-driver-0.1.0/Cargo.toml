@@ -15,7 +15,7 @@ name = "max7219-driver"
 version = "0.1.0"
 authors = ["Omar Hiari"]
 exclude = [
-    "target/*",
+    "target/package/*",
     "target/debug/*",
 ]
 description = "This crate provides a platform agnostic driver for the MAX7219 LED Driver IC."
