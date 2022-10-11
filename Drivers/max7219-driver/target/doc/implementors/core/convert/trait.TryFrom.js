@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["max7219_driver"] = [{"text":"impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.60.0/core/convert/trait.TryFrom.html\" title=\"trait core::convert::TryFrom\">TryFrom</a>&lt;<a class=\"primitive\" href=\"https://doc.rust-lang.org/1.60.0/core/primitive.u8.html\">u8</a>&gt; for <a class=\"enum\" href=\"max7219_driver/enum.DigitRowAddress.html\" title=\"enum max7219_driver::DigitRowAddress\">DigitRowAddress</a>","synthetic":false,"types":["max7219_driver::DigitRowAddress"]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
