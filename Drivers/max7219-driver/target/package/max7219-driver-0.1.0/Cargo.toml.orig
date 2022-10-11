@@ -8,8 +8,13 @@ homepage = "https://apollolabsblog.hashnode.dev/"
 readme = "README.md"
 repository = "https://github.com/apollolabsdev/stm32-nucleo-f401re/tree/main/Drivers/"
 license = "MIT OR Apache-2.0"
+exclude = [
+    "target/*", 
+    "target/debug/*",
+    ]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 embedded-hal = "0.2.7"
+

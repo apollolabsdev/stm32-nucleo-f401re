@@ -9,7 +9,7 @@ readme = "README.md"
 repository = "https://github.com/apollolabsdev/stm32-nucleo-f401re/tree/main/Drivers/"
 license = "MIT OR Apache-2.0"
 exclude = [
-    "target/*", 
+    "target/package/*", 
     "target/debug/*",
     ]
 
