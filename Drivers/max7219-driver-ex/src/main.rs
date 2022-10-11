@@ -4,7 +4,7 @@
 // Imports
 use core::convert::TryFrom;
 use cortex_m_rt::entry;
-use max7219::{self, DigitRowAddress, MAX7219};
+use max7219_driver::{self, DigitRowAddress, MAX7219};
 use panic_halt as _;
 use stm32f4xx_hal::{
     pac,

@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Operation","Operation for transactional SPI trait"]],"mod":[["transfer","Blocking transfer"],["write","Blocking write"]],"trait":[["Transactional","Transactional trait allows multiple actions to be executed as part of a single SPI transaction"],["Transfer","Blocking transfer"],["Write","Blocking write"]]});
