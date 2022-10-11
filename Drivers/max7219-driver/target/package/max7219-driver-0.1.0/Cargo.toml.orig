@@ -1,0 +1,15 @@
+[package]
+name = "max7219-driver"
+version = "0.1.0"
+edition = "2021"
+authors = ["Omar Hiari"]
+description = "This crate provides a platform agnostic driver for the MAX7219 LED Driver IC."
+homepage = "https://apollolabsblog.hashnode.dev/"
+readme = "README.md"
+repository = "https://github.com/apollolabsdev/stm32-nucleo-f401re/tree/main/Drivers/"
+license = "MIT OR Apache-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+embedded-hal = "0.2.7"
