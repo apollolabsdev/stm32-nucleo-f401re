@@ -114,6 +114,9 @@ mod app {
             delay = 2000_u32;
         }
 
+        // Update delay value in global context
+        *ctx.local.delayval = delay;
+
         // Update the timeout value in the timer peripheral
         ctx.shared
             .timer
