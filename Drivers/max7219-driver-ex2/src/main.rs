@@ -10,7 +10,7 @@ use embedded_graphics::{
     primitives::{Circle, PrimitiveStyle, Triangle},
     text::Text,
 };
-use max7219_driver::{self, DigitRowAddress, MAX7219LedMat};
+use max7219_driver::{self, MAX7219LedMat};
 use panic_halt as _;
 use stm32f4xx_hal::{
     pac,
