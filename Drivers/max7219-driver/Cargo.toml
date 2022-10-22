@@ -17,5 +17,4 @@ exclude = [
 [dependencies]
 embedded-hal = "0.2.7"
 embedded-graphics = "0.7.1"
-num_enum = "0.5.7"
 
