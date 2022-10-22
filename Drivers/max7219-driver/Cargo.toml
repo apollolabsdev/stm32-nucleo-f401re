@@ -1,6 +1,6 @@
 [package]
 name = "max7219-driver"
-version = "0.2.1"
+version = "0.2.2"
 edition = "2021"
 authors = ["Omar Hiari"]
 description = "This crate provides a platform agnostic driver for the MAX7219 LED Driver IC."
@@ -17,4 +17,4 @@ exclude = [
 [dependencies]
 embedded-hal = "0.2.7"
 embedded-graphics = "0.7.1"
-
+num_enum = { version = "0.5.7", default-features = false }

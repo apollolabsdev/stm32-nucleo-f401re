@@ -66,6 +66,8 @@ use embedded_hal as hal;
 
 use embedded_graphics::prelude::*;
 
+use num_enum::TryFromPrimitive;
+
 use hal::blocking::spi::Write;
 use hal::digital::v2::OutputPin;
 use hal::spi::{Mode, Phase, Polarity};
@@ -694,7 +696,7 @@ pub enum DisplayTest {
 
 /// Enumeration of the MAX7219 digit/row addresses
 #[repr(u8)]
-#[derive(Debug)]
+#[derive(Debug, TryFromPrimitive)]
 pub enum DigitRowAddress {
     Digit0 = 0x01,
     Digit1 = 0x02,
@@ -704,25 +706,4 @@ pub enum DigitRowAddress {
     Digit5 = 0x06,
     Digit6 = 0x07,
     Digit7 = 0x08,
-}
-
-// Implement TryFrom Trait on RowAddress to retrieve corresponding digit
-impl TryFrom<u8> for DigitRowAddress {
-    type Error = u8;
-
-    fn try_from(value: u8) -> Result<Self, Self::Error> {
-        use DigitRowAddress::*;
-
-        Ok(match value {
-            0x01 => Digit0,
-            0x02 => Digit1,
-            0x03 => Digit2,
-            0x04 => Digit3,
-            0x05 => Digit4,
-            0x06 => Digit5,
-            0x07 => Digit6,
-            0x08 => Digit7,
-            invalid => return Err(invalid),
-        })
-    }
 }
