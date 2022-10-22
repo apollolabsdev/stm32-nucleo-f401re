@@ -1,1 +1,0 @@
-window.ALL_CRATES = ["embedded_hal","max7219_driver","void"];
