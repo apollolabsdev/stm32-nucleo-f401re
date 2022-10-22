@@ -1,0 +1,10 @@
+/Users/omarhiari/Dropbox/My Mac (omars-mbp.lan)/Documents/GitHub/stm32-nucleo-f4-rust/Drivers/max7219-driver/target/debug/deps/float_cmp-40d90be000ad2bd3.rmeta: /Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/lib.rs /Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/macros.rs /Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/ulps.rs /Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/ulps_eq.rs /Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/eq.rs /Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/ratio.rs
+
+/Users/omarhiari/Dropbox/My Mac (omars-mbp.lan)/Documents/GitHub/stm32-nucleo-f4-rust/Drivers/max7219-driver/target/debug/deps/float_cmp-40d90be000ad2bd3.d: /Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/lib.rs /Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/macros.rs /Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/ulps.rs /Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/ulps_eq.rs /Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/eq.rs /Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/ratio.rs
+
+/Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/lib.rs:
+/Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/macros.rs:
+/Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/ulps.rs:
+/Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/ulps_eq.rs:
+/Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/eq.rs:
+/Users/omarhiari/.cargo/registry/src/github.com-1ecc6299db9ec823/float-cmp-0.8.0/src/ratio.rs:
