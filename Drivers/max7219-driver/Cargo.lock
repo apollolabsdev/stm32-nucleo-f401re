@@ -64,7 +64,7 @@ dependencies = [
 
 [[package]]
 name = "max7219-driver"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "embedded-graphics",
  "embedded-hal",
