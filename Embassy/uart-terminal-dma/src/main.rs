@@ -2,9 +2,6 @@
 #![no_main]
 #![feature(type_alias_impl_trait)]
 
-// use core::fmt::Write;
-// use heapless::String;
-
 use embassy_executor::Spawner;
 use embassy_stm32::interrupt;
 use embassy_stm32::usart::{Config, Uart};
