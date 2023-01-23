@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
   28:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c **** 
   29:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c **** /** @defgroup PWREx PWREx
   30:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****   * @brief PWR HAL module driver
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 2
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 2
 
 
   31:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****   * @{
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
   85:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****           level 0 is requested. 
   86:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****       -@- Refer to the description of Read protection (RDP) in the Flash 
   87:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****           programming manual.
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 3
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 3
 
 
   88:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
  142:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c **** {
   29              		.loc 1 142 1 view -0
   30              		.cfi_startproc
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 4
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 4
 
 
   31              		@ args = 0, pretend = 0, frame = 0
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
   72              	.L7:
  156:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****     } 
  157:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****   }
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 5
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 5
 
 
  158:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****   return HAL_OK;
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
  114              		.loc 1 172 3 is_stmt 1 view .LVU22
  115              		.loc 1 172 15 is_stmt 0 view .LVU23
  116 000a FFF7FEFF 		bl	HAL_GetTick
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 6
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 6
 
 
  117              	.LVL6:
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
  161              		.thumb
  162              		.thumb_func
  163              		.fpu fpv4-sp-d16
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 7
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 7
 
 
  165              	HAL_PWREx_EnableFlashPowerDown:
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
  204 0002 0022     		movs	r2, #0
  205 0004 5A62     		str	r2, [r3, #36]
  201:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c **** }
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 8
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 8
 
 
  206              		.loc 1 201 1 view .LVU43
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
  250              		.fpu fpv4-sp-d16
  252              	HAL_PWREx_ControlVoltageScaling:
  253              	.LVL10:
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 9
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 9
 
 
  254              	.LFB135:
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
  268:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****   *                                               the maximum value of fHCLK is 168 MHz. It can be 
  269:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****   *                                               180 MHz by activating the over-drive mode.
  270:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****   *            @arg PWR_REGULATOR_VOLTAGE_SCALE2: Regulator voltage output range 2 mode,
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 10
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 10
 
 
  271:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****   *                                               the maximum value of fHCLK is 144 MHz. It can be 
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
  284 0014 02F08052 		and	r2, r2, #268435456
  285 0018 0092     		str	r2, [sp]
  286              		.loc 1 295 3 view .LVU56
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 11
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 11
 
 
  287 001a 009A     		ldr	r2, [sp]
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
  310:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****         return HAL_TIMEOUT;
  327              		.loc 1 310 16 view .LVU73
  328 0048 0320     		movs	r0, #3
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 12
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 12
 
 
  329 004a 31E0     		b	.L29
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
  370 007a 06D1     		bne	.L42
  324:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****     {
  325:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****       if((HAL_GetTick() - tickstart ) > PLL_TIMEOUT_VALUE)
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 13
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 13
 
 
  371              		.loc 1 325 7 is_stmt 1 view .LVU88
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
  339:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****     }
  340:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****   }
  341:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****   else
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 14
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 14
 
 
  342:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****   {
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
  448              		@ args = 0, pretend = 0, frame = 0
  449              		@ frame_needed = 0, uses_anonymous_args = 0
  450              		@ link register save eliminated.
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 15
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 15
 
 
  361:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****   *(__IO uint32_t *) CR_MRLVDS_BB = (uint32_t)ENABLE;
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
  495              		.align	1
  496              		.global	HAL_PWREx_EnableLowRegulatorLowVoltage
  497              		.syntax unified
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 16
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 16
 
 
  498              		.thumb
@@ -958,7 +958,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
  535              		@ args = 0, pretend = 0, frame = 0
  536              		@ frame_needed = 0, uses_anonymous_args = 0
  537              		@ link register save eliminated.
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 17
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 17
 
 
  394:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c ****   *(__IO uint32_t *) CR_LPLVDS_BB = (uint32_t)DISABLE;
@@ -984,41 +984,41 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 1
  557              		.file 5 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h"
  558              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
  559              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s 			page 18
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s 			page 18
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f4xx_hal_pwr_ex.c
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:18     .text.HAL_PWREx_EnableBkUpReg:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:26     .text.HAL_PWREx_EnableBkUpReg:0000000000000000 HAL_PWREx_EnableBkUpReg
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:83     .text.HAL_PWREx_EnableBkUpReg:0000000000000030 $d
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:89     .text.HAL_PWREx_DisableBkUpReg:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:96     .text.HAL_PWREx_DisableBkUpReg:0000000000000000 HAL_PWREx_DisableBkUpReg
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:152    .text.HAL_PWREx_DisableBkUpReg:0000000000000030 $d
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:158    .text.HAL_PWREx_EnableFlashPowerDown:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:165    .text.HAL_PWREx_EnableFlashPowerDown:0000000000000000 HAL_PWREx_EnableFlashPowerDown
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:182    .text.HAL_PWREx_EnableFlashPowerDown:0000000000000008 $d
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:187    .text.HAL_PWREx_DisableFlashPowerDown:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:194    .text.HAL_PWREx_DisableFlashPowerDown:0000000000000000 HAL_PWREx_DisableFlashPowerDown
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:211    .text.HAL_PWREx_DisableFlashPowerDown:0000000000000008 $d
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:216    .text.HAL_PWREx_GetVoltageRange:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:223    .text.HAL_PWREx_GetVoltageRange:0000000000000000 HAL_PWREx_GetVoltageRange
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:240    .text.HAL_PWREx_GetVoltageRange:000000000000000c $d
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:245    .text.HAL_PWREx_ControlVoltageScaling:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:252    .text.HAL_PWREx_ControlVoltageScaling:0000000000000000 HAL_PWREx_ControlVoltageScaling
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:430    .text.HAL_PWREx_ControlVoltageScaling:00000000000000b4 $d
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:437    .text.HAL_PWREx_EnableMainRegulatorLowVoltage:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:444    .text.HAL_PWREx_EnableMainRegulatorLowVoltage:0000000000000000 HAL_PWREx_EnableMainRegulatorLowVoltage
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:461    .text.HAL_PWREx_EnableMainRegulatorLowVoltage:0000000000000008 $d
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:466    .text.HAL_PWREx_DisableMainRegulatorLowVoltage:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:473    .text.HAL_PWREx_DisableMainRegulatorLowVoltage:0000000000000000 HAL_PWREx_DisableMainRegulatorLowVoltage
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:490    .text.HAL_PWREx_DisableMainRegulatorLowVoltage:0000000000000008 $d
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:495    .text.HAL_PWREx_EnableLowRegulatorLowVoltage:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:502    .text.HAL_PWREx_EnableLowRegulatorLowVoltage:0000000000000000 HAL_PWREx_EnableLowRegulatorLowVoltage
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:519    .text.HAL_PWREx_EnableLowRegulatorLowVoltage:0000000000000008 $d
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:524    .text.HAL_PWREx_DisableLowRegulatorLowVoltage:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:531    .text.HAL_PWREx_DisableLowRegulatorLowVoltage:0000000000000000 HAL_PWREx_DisableLowRegulatorLowVoltage
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//cc6P7AxZ.s:548    .text.HAL_PWREx_DisableLowRegulatorLowVoltage:0000000000000008 $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:18     .text.HAL_PWREx_EnableBkUpReg:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:26     .text.HAL_PWREx_EnableBkUpReg:0000000000000000 HAL_PWREx_EnableBkUpReg
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:83     .text.HAL_PWREx_EnableBkUpReg:0000000000000030 $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:89     .text.HAL_PWREx_DisableBkUpReg:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:96     .text.HAL_PWREx_DisableBkUpReg:0000000000000000 HAL_PWREx_DisableBkUpReg
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:152    .text.HAL_PWREx_DisableBkUpReg:0000000000000030 $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:158    .text.HAL_PWREx_EnableFlashPowerDown:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:165    .text.HAL_PWREx_EnableFlashPowerDown:0000000000000000 HAL_PWREx_EnableFlashPowerDown
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:182    .text.HAL_PWREx_EnableFlashPowerDown:0000000000000008 $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:187    .text.HAL_PWREx_DisableFlashPowerDown:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:194    .text.HAL_PWREx_DisableFlashPowerDown:0000000000000000 HAL_PWREx_DisableFlashPowerDown
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:211    .text.HAL_PWREx_DisableFlashPowerDown:0000000000000008 $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:216    .text.HAL_PWREx_GetVoltageRange:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:223    .text.HAL_PWREx_GetVoltageRange:0000000000000000 HAL_PWREx_GetVoltageRange
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:240    .text.HAL_PWREx_GetVoltageRange:000000000000000c $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:245    .text.HAL_PWREx_ControlVoltageScaling:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:252    .text.HAL_PWREx_ControlVoltageScaling:0000000000000000 HAL_PWREx_ControlVoltageScaling
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:430    .text.HAL_PWREx_ControlVoltageScaling:00000000000000b4 $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:437    .text.HAL_PWREx_EnableMainRegulatorLowVoltage:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:444    .text.HAL_PWREx_EnableMainRegulatorLowVoltage:0000000000000000 HAL_PWREx_EnableMainRegulatorLowVoltage
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:461    .text.HAL_PWREx_EnableMainRegulatorLowVoltage:0000000000000008 $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:466    .text.HAL_PWREx_DisableMainRegulatorLowVoltage:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:473    .text.HAL_PWREx_DisableMainRegulatorLowVoltage:0000000000000000 HAL_PWREx_DisableMainRegulatorLowVoltage
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:490    .text.HAL_PWREx_DisableMainRegulatorLowVoltage:0000000000000008 $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:495    .text.HAL_PWREx_EnableLowRegulatorLowVoltage:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:502    .text.HAL_PWREx_EnableLowRegulatorLowVoltage:0000000000000000 HAL_PWREx_EnableLowRegulatorLowVoltage
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:519    .text.HAL_PWREx_EnableLowRegulatorLowVoltage:0000000000000008 $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:524    .text.HAL_PWREx_DisableLowRegulatorLowVoltage:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:531    .text.HAL_PWREx_DisableLowRegulatorLowVoltage:0000000000000000 HAL_PWREx_DisableLowRegulatorLowVoltage
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccj5w2kG.s:548    .text.HAL_PWREx_DisableLowRegulatorLowVoltage:0000000000000008 $d
 
 UNDEFINED SYMBOLS
 HAL_GetTick

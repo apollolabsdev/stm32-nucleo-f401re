@@ -36,6 +36,10 @@ cbindgen = "0.20.0"
 version = "0.13.1"
 features = ["rt", "stm32f401"] # replace the model of your microcontroller here
 
+[dependencies.stm32f4]
+version = "0.15.1"
+features = ["stm32f401"]
+
 [lib]
 name = "toggle"
 crate-type = ["staticlib"]

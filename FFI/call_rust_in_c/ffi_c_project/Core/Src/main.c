@@ -20,9 +20,10 @@
 #include "main.h"
 #include "usart.h"
 #include "gpio.h"
+#include "bindings.h"
 
 /* Private function prototypes -----------------------------------------------*/
-
+// typedef RegisterBlock GPIO_TypeDef;
 /**
  * @brief  The application entry point.
  * @retval int
@@ -61,9 +62,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
-    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-    HAL_Delay(500); /* Insert delay 100 ms */
+    togglePin((RegisterBlock *)GPIOA_BASE);
+    HAL_Delay(1000); /* Insert delay in ms */
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
   27:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****     (+) Each Exti line can be configured within this driver.
   28:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c **** 
   29:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****     (+) Exti line can be configured in 3 different modes
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 2
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 2
 
 
   30:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****         (++) Interrupt
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
   84:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c **** 
   85:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c **** /* Includes ------------------------------------------------------------------*/
   86:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c **** #include "stm32f4xx_hal.h"
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 3
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 3
 
 
   87:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  141:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****   */
  142:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c **** HAL_StatusTypeDef HAL_EXTI_SetConfigLine(EXTI_HandleTypeDef *hexti, EXTI_ConfigTypeDef *pExtiConfig
  143:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c **** {
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 4
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 4
 
 
   30              		.loc 1 143 1 view -0
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
   63              		.loc 1 163 3 is_stmt 1 view .LVU15
   64              		.loc 1 163 12 is_stmt 0 view .LVU16
   65 0012 0120     		movs	r0, #1
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 5
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 5
 
 
   66              	.LVL2:
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
   98              	.L7:
  186:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****     }
  187:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****     else
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 6
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 6
 
 
  188:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****     {
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  121              		.loc 1 219 3 is_stmt 1 view .LVU37
  122              		.loc 1 219 19 is_stmt 0 view .LVU38
  123 0058 4B68     		ldr	r3, [r1, #4]
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 7
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 7
 
 
  124              		.loc 1 219 6 view .LVU39
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  164 0082 EC60     		str	r4, [r5, #12]
  165 0084 DAE7     		b	.L7
  166              	.L17:
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 8
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 8
 
 
  196:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****       assert_param(IS_EXTI_GPIO_PIN(linepos));
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  204              		.loc 1 214 15 is_stmt 0 view .LVU65
  205 00ac 084A     		ldr	r2, .L18
  206 00ae 1368     		ldr	r3, [r2]
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 9
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 9
 
 
  207 00b0 23EA0003 		bic	r3, r3, r0
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  255              		.fpu fpv4-sp-d16
  257              	HAL_EXTI_GetConfigLine:
  258              	.LVL18:
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 10
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 10
 
 
  259              	.LFB131:
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  257:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****   maskline = (1uL << linepos);
  286              		.loc 1 257 3 is_stmt 1 view .LVU87
  287              		.loc 1 257 12 is_stmt 0 view .LVU88
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 11
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 11
 
 
  288 0010 0123     		movs	r3, #1
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  280:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****   pExtiConfig->GPIOSel = 0x00u;
  320              		.loc 1 280 3 is_stmt 1 view .LVU101
  321              		.loc 1 280 24 is_stmt 0 view .LVU102
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 12
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 12
 
 
  322 0036 CA60     		str	r2, [r1, #12]
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  357              		.loc 1 299 8 view .LVU118
  358 005e B3F1C06F 		cmp	r3, #100663296
  359 0062 04D0     		beq	.L31
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 13
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 13
 
 
  300:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****     {
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  392              		.loc 1 304 98 view .LVU132
  393 008a 1B0F     		lsrs	r3, r3, #28
  304:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****     }
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 14
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 14
 
 
  394              		.loc 1 304 28 view .LVU133
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  317:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c **** {
  437              		.loc 1 317 1 is_stmt 1 view -0
  438              		.cfi_startproc
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 15
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 15
 
 
  439              		@ args = 0, pretend = 0, frame = 0
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  473              		.loc 1 336 26 view .LVU156
  474 001a 21EA0301 		bic	r1, r1, r3
  475              		.loc 1 336 13 view .LVU157
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 16
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 16
 
 
  476 001e 1160     		str	r1, [r2]
@@ -958,7 +958,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  354:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****       SYSCFG->EXTICR[linepos >> 2u] = regval;
  355:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****     }
  356:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****   }
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 17
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 17
 
 
  357:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c **** 
@@ -1018,7 +1018,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  325:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****   }
  554              		.loc 1 325 12 view .LVU191
  555 0076 0120     		movs	r0, #1
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 18
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 18
 
 
  556              	.LVL42:
@@ -1078,7 +1078,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  598              	.LVL46:
  372:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c **** 
  373:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****   switch (CallbackID)
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 19
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 19
 
 
  599              		.loc 1 373 3 view .LVU198
@@ -1138,7 +1138,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  633              		@ frame_needed = 0, uses_anonymous_args = 0
  634              		@ link register save eliminated.
  396:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****   /* Check the parameters */
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 20
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 20
 
 
  397:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****   assert_param(IS_EXTI_LINE(ExtiLine));
@@ -1198,7 +1198,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  418:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****   *  @brief EXTI IO functions.
  419:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****   *
  420:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c **** @verbatim
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 21
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 21
 
 
  421:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****  ===============================================================================
@@ -1258,7 +1258,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  445:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****   {
  446:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****     /* Clear pending bit */
  447:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****     EXTI->PR = maskline;
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 22
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 22
 
 
  699              		.loc 1 447 5 is_stmt 1 view .LVU229
@@ -1318,7 +1318,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  735              		.loc 1 467 1 is_stmt 1 view -0
  736              		.cfi_startproc
  737              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 23
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 23
 
 
  738              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1378,7 +1378,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  775 0016 00BF     		.align	2
  776              	.L58:
  777 0018 003C0140 		.word	1073822720
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 24
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 24
 
 
  778              		.cfi_endproc
@@ -1438,7 +1438,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  810              		.loc 1 508 3 is_stmt 1 view .LVU266
  811              		.loc 1 508 12 is_stmt 0 view .LVU267
  812 000a 014A     		ldr	r2, .L61
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 25
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 25
 
 
  813 000c 5361     		str	r3, [r2, #20]
@@ -1498,7 +1498,7 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  527:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****   /* Generate Software interrupt */
  528:Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c ****   EXTI->SWIER = maskline;
  851              		.loc 1 528 3 is_stmt 1 view .LVU277
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 26
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 26
 
 
  852              		.loc 1 528 15 is_stmt 0 view .LVU278
@@ -1520,35 +1520,35 @@ ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 1
  868              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xe.h"
  869              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
  870              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h"
-ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s 			page 27
+ARM GAS  /var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s 			page 27
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f4xx_hal_exti.c
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:18     .text.HAL_EXTI_SetConfigLine:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:26     .text.HAL_EXTI_SetConfigLine:0000000000000000 HAL_EXTI_SetConfigLine
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:244    .text.HAL_EXTI_SetConfigLine:00000000000000d0 $d
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:250    .text.HAL_EXTI_GetConfigLine:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:257    .text.HAL_EXTI_GetConfigLine:0000000000000000 HAL_EXTI_GetConfigLine
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:421    .text.HAL_EXTI_GetConfigLine:00000000000000a0 $d
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:427    .text.HAL_EXTI_ClearConfigLine:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:434    .text.HAL_EXTI_ClearConfigLine:0000000000000000 HAL_EXTI_ClearConfigLine
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:574    .text.HAL_EXTI_ClearConfigLine:0000000000000080 $d
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:580    .text.HAL_EXTI_RegisterCallback:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:587    .text.HAL_EXTI_RegisterCallback:0000000000000000 HAL_EXTI_RegisterCallback
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:620    .text.HAL_EXTI_GetHandle:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:627    .text.HAL_EXTI_GetHandle:0000000000000000 HAL_EXTI_GetHandle
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:659    .text.HAL_EXTI_IRQHandler:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:666    .text.HAL_EXTI_IRQHandler:0000000000000000 HAL_EXTI_IRQHandler
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:720    .text.HAL_EXTI_IRQHandler:0000000000000020 $d
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:725    .text.HAL_EXTI_GetPending:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:732    .text.HAL_EXTI_GetPending:0000000000000000 HAL_EXTI_GetPending
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:777    .text.HAL_EXTI_GetPending:0000000000000018 $d
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:782    .text.HAL_EXTI_ClearPending:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:789    .text.HAL_EXTI_ClearPending:0000000000000000 HAL_EXTI_ClearPending
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:819    .text.HAL_EXTI_ClearPending:0000000000000010 $d
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:824    .text.HAL_EXTI_GenerateSWI:0000000000000000 $t
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:831    .text.HAL_EXTI_GenerateSWI:0000000000000000 HAL_EXTI_GenerateSWI
-/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccQpWLSR.s:860    .text.HAL_EXTI_GenerateSWI:0000000000000010 $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:18     .text.HAL_EXTI_SetConfigLine:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:26     .text.HAL_EXTI_SetConfigLine:0000000000000000 HAL_EXTI_SetConfigLine
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:244    .text.HAL_EXTI_SetConfigLine:00000000000000d0 $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:250    .text.HAL_EXTI_GetConfigLine:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:257    .text.HAL_EXTI_GetConfigLine:0000000000000000 HAL_EXTI_GetConfigLine
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:421    .text.HAL_EXTI_GetConfigLine:00000000000000a0 $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:427    .text.HAL_EXTI_ClearConfigLine:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:434    .text.HAL_EXTI_ClearConfigLine:0000000000000000 HAL_EXTI_ClearConfigLine
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:574    .text.HAL_EXTI_ClearConfigLine:0000000000000080 $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:580    .text.HAL_EXTI_RegisterCallback:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:587    .text.HAL_EXTI_RegisterCallback:0000000000000000 HAL_EXTI_RegisterCallback
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:620    .text.HAL_EXTI_GetHandle:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:627    .text.HAL_EXTI_GetHandle:0000000000000000 HAL_EXTI_GetHandle
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:659    .text.HAL_EXTI_IRQHandler:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:666    .text.HAL_EXTI_IRQHandler:0000000000000000 HAL_EXTI_IRQHandler
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:720    .text.HAL_EXTI_IRQHandler:0000000000000020 $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:725    .text.HAL_EXTI_GetPending:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:732    .text.HAL_EXTI_GetPending:0000000000000000 HAL_EXTI_GetPending
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:777    .text.HAL_EXTI_GetPending:0000000000000018 $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:782    .text.HAL_EXTI_ClearPending:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:789    .text.HAL_EXTI_ClearPending:0000000000000000 HAL_EXTI_ClearPending
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:819    .text.HAL_EXTI_ClearPending:0000000000000010 $d
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:824    .text.HAL_EXTI_GenerateSWI:0000000000000000 $t
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:831    .text.HAL_EXTI_GenerateSWI:0000000000000000 HAL_EXTI_GenerateSWI
+/var/folders/p9/4kdl8dvj43z82bfv3n3kj5dw0000gn/T//ccysOxxW.s:860    .text.HAL_EXTI_GenerateSWI:0000000000000010 $d
 
 NO UNDEFINED SYMBOLS

@@ -3,4 +3,6 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-void togglePin(const PORTA *p);
+typedef struct RegisterBlock RegisterBlock;
+
+void togglePin(struct RegisterBlock *p);
