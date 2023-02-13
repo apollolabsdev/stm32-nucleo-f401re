@@ -1,0 +1,12 @@
+[package]
+authors = ["apollolabsdev <104051566+apollolabsdev@users.noreply.github.com>"]
+edition = "2018"
+readme = "README.md"
+name = "stm32f4xxgpio"
+version = "0.1.0"
+
+[dependencies]
+cortex-m = { version = "0.7.7", features = ["critical-section-single-core"] }
+stm32f401_pac = { path = "../svd2rust/stm32f401_pac", features = ["rt", "critical-section"] }
+panic-halt = "0.2.0"
+cortex-m-rt = "0.7.2"
