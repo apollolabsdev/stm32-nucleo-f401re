@@ -3,7 +3,6 @@
 
 // Imports
 use cortex_m_rt::entry;
-use pac::interrupt;
 use panic_halt as _;
 use stm32f401_pac as pac;
 
@@ -55,6 +54,3 @@ fn main() -> ! {
         while dp.USART2.sr.read().tc().bit_is_clear() {}
     }
 }
-
-#[interrupt]
-fn EXT13() {}
