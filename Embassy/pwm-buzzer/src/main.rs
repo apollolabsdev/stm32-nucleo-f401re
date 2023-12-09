@@ -3,8 +3,8 @@
 #![feature(type_alias_impl_trait)]
 
 use cortex_m_rt::entry;
-use embassy_stm32::pwm::simple_pwm::{PwmPin, SimplePwm};
-use embassy_stm32::pwm::Channel;
+use embassy_stm32::timer::simple_pwm::{PwmPin, SimplePwm};
+// use embassy_stm32::pwm::Channel;
 use embassy_stm32::time::hz;
 use embassy_time::Delay;
 use embedded_hal::blocking::delay::DelayMs;

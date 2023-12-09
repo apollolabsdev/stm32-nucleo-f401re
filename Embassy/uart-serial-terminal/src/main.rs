@@ -42,7 +42,7 @@ async fn main(spawner: Spawner) {
     let mut button = ExtiInput::new(button, p.EXTI13);
 
     //Configure UART
-    let mut usart = UartTx::new(p.USART2, p.PA2, NoDma, Config::default());
+    let mut usart = UartTx::new(p.USART2, p.PA2, NoDma, Config::default()).unwrap();
 
     // Create and initialize a delay variable to manage delay loop
     let mut del_var = 2000;

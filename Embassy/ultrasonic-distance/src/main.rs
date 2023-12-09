@@ -21,7 +21,7 @@ fn main() -> ! {
     let mut echo = Flex::new(p.PA8);
 
     //Configure UART
-    let mut usart = UartTx::new(p.USART2, p.PA2, NoDma, Config::default());
+    let mut usart = UartTx::new(p.USART2, p.PA2, NoDma, Config::default()).unwrap();
 
     // Create empty String for message
     let mut msg: String<64> = String::new();

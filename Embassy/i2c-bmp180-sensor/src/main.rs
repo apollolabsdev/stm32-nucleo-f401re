@@ -9,9 +9,9 @@ use heapless::String;
 use cortex_m_rt::entry;
 use embassy_stm32::dma::NoDma;
 use embassy_stm32::i2c::I2c;
-use embassy_stm32::interrupt;
 use embassy_stm32::time::hz;
 use embassy_stm32::usart::{Config, UartTx};
+use embassy_stm32::{bind_interrupts, i2c, peripherals};
 use embassy_time::Delay;
 use panic_halt as _;
 
@@ -20,13 +20,17 @@ fn main() -> ! {
     // Initialize and create handle for devicer peripherals
     let p = embassy_stm32::init(Default::default());
 
-    let irq = interrupt::take!(I2C1_EV);
+    bind_interrupts!(struct Irqs {
+        I2C1_EV => i2c::EventInterruptHandler<peripherals::I2C1>;
+        I2C1_ER => i2c::ErrorInterruptHandler<peripherals::I2C1>;
+    });
+
     // I2C Configuration
     let mut i2c = I2c::new(
         p.I2C1,
         p.PB8,
         p.PB9,
-        irq,
+        Irqs,
         NoDma,
         NoDma,
         hz(100000),
@@ -34,7 +38,7 @@ fn main() -> ! {
     );
 
     //Configure UART
-    let mut usart = UartTx::new(p.USART2, p.PA2, NoDma, Config::default());
+    let mut usart = UartTx::new(p.USART2, p.PA2, NoDma, Config::default()).unwrap();
 
     // Create empty String for message
     let mut msg: String<64> = String::new();
