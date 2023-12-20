@@ -12,10 +12,10 @@ fn main() -> ! {
     let dp = pac::Peripherals::take().unwrap();
 
     // Enable HSE Clock
-    dp.RCC.cr.write(|w| w.hseon().set_bit());
+    dp.RCC.cr.modify(|_, w| w.hseon().set_bit());
 
     // Wait for HSE clock to become ready
-    while dp.RCC.cr.read().hserdy().bit() {}
+    while !dp.RCC.cr.read().hserdy().bit() {}
 
     // Configure PCLK1 Prescalar
     dp.RCC.cfgr.write(|w| unsafe { w.ppre1().bits(0b100) });

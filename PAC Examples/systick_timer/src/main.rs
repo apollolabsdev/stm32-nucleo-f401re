@@ -15,10 +15,10 @@ fn main() -> ! {
 
     // Initlialize Clocks
     // Enable HSE Clock
-    dp.RCC.cr.write(|w| w.hseon().set_bit());
+    dp.RCC.cr.modify(|_, w| w.hseon().set_bit());
 
     // Wait for HSE clock to become ready
-    while dp.RCC.cr.read().hserdy().bit() {}
+    while !dp.RCC.cr.read().hserdy().bit() {}
 
     //Enable Clock to GPIOA
     dp.RCC.ahb1enr.write(|w| w.gpioaen().set_bit());

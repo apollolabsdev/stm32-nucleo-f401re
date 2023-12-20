@@ -18,7 +18,7 @@ fn main() -> ! {
     dp.RCC.cr.modify(|_, w| w.hsion().set_bit());
 
     // Wait for HSI clock to become ready
-    while dp.RCC.cr.read().hsirdy().bit() {}
+    while !dp.RCC.cr.read().hsirdy().bit() {}
 
     // Enable Clock to GPIOA
     dp.RCC.ahb1enr.write(|w| w.gpioaen().set_bit());
